@@ -2,25 +2,25 @@
   "dataset": "D:\\DownLoad\\malldemo-main\\super-biz-agent\\rag-test\\datasets\\rule_test_cases.json",
   "summary": {
     "Recall@1": 0.125,
-    "Precision@1": 0.052083333333333336,
-    "Hit@1": 0.052083333333333336,
-    "MRR@1": 0.052083333333333336,
-    "F1@1": 0.07352941176470588,
-    "Recall@3": 0.14583333333333334,
-    "Precision@3": 0.024305555555555552,
-    "Hit@3": 0.07291666666666667,
-    "MRR@3": 0.0625,
-    "F1@3": 0.041666666666666664,
-    "Recall@5": 0.14583333333333334,
-    "Precision@5": 0.014583333333333335,
-    "Hit@5": 0.07291666666666667,
-    "MRR@5": 0.0625,
-    "F1@5": 0.026515151515151516,
-    "Micro_Recall": 0.06796116504854369,
-    "Total_Queries": 96,
-    "Total_Relevant": 103,
-    "Total_Relevant_Retrieved": 7,
-    "Avg_Results_Per_Query": 3.9270833333333335,
+    "Precision@1": 0.0625,
+    "Hit@1": 0.0625,
+    "MRR@1": 0.0625,
+    "F1@1": 0.08333333333333333,
+    "Recall@3": 0.15178571428571427,
+    "Precision@3": 0.02976190476190476,
+    "Hit@3": 0.08928571428571429,
+    "MRR@3": 0.07589285714285714,
+    "F1@3": 0.049765807962529274,
+    "Recall@5": 0.15178571428571427,
+    "Precision@5": 0.017857142857142856,
+    "Hit@5": 0.08928571428571429,
+    "MRR@5": 0.07589285714285714,
+    "F1@5": 0.03195488721804511,
+    "Micro_Recall": 0.08403361344537816,
+    "Total_Queries": 112,
+    "Total_Relevant": 119,
+    "Total_Relevant_Retrieved": 10,
+    "Avg_Results_Per_Query": 3.6160714285714284,
     "Eval_Mode": "score_threshold"
   },
   "category_analysis": {
@@ -44,7 +44,7 @@
       "Total_Queries": 5,
       "Total_Relevant": 8,
       "Total_Relevant_Retrieved": 1,
-      "Avg_Results_Per_Query": 5.2,
+      "Avg_Results_Per_Query": 5.8,
       "Eval_Mode": "score_threshold"
     },
     "同义-描述不符": {
@@ -67,7 +67,7 @@
       "Total_Queries": 5,
       "Total_Relevant": 7,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 4.8,
+      "Avg_Results_Per_Query": 4.4,
       "Eval_Mode": "score_threshold"
     },
     "同义-物流损坏": {
@@ -113,7 +113,7 @@
       "Total_Queries": 5,
       "Total_Relevant": 5,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 3.6,
+      "Avg_Results_Per_Query": 3.0,
       "Eval_Mode": "score_threshold"
     },
     "否定句": {
@@ -136,7 +136,283 @@
       "Total_Queries": 3,
       "Total_Relevant": 0,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 4.333333333333333,
+      "Avg_Results_Per_Query": 4.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-假货": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 2.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-内裤": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 0.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-定金": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 8.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-律师": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 1.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-投诉": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 3.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-文胸": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 1.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-欺诈": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 1.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-物流": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 1.0,
+      "Precision@3": 0.3333333333333333,
+      "Hit@3": 1.0,
+      "MRR@3": 0.5,
+      "F1@3": 0.5,
+      "Recall@5": 1.0,
+      "Precision@5": 0.2,
+      "Hit@5": 1.0,
+      "MRR@5": 0.5,
+      "F1@5": 0.33333333333333337,
+      "Micro_Recall": 1.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 1,
+      "Avg_Results_Per_Query": 4.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-质量": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 3.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-过敏": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 1.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-退货": {
+      "Recall@1": 0.0,
+      "Precision@1": 0.0,
+      "Hit@1": 0.0,
+      "MRR@1": 0.0,
+      "F1@1": 0.0,
+      "Recall@3": 0.0,
+      "Precision@3": 0.0,
+      "Hit@3": 0.0,
+      "MRR@3": 0.0,
+      "F1@3": 0.0,
+      "Recall@5": 0.0,
+      "Precision@5": 0.0,
+      "Hit@5": 0.0,
+      "MRR@5": 0.0,
+      "F1@5": 0.0,
+      "Micro_Recall": 0.0,
+      "Total_Queries": 1,
+      "Total_Relevant": 1,
+      "Total_Relevant_Retrieved": 0,
+      "Avg_Results_Per_Query": 2.0,
+      "Eval_Mode": "score_threshold"
+    },
+    "拼写-长词": {
+      "Recall@1": 0.4,
+      "Precision@1": 0.4,
+      "Hit@1": 0.4,
+      "MRR@1": 0.4,
+      "F1@1": 0.4000000000000001,
+      "Recall@3": 0.4,
+      "Precision@3": 0.13333333333333333,
+      "Hit@3": 0.4,
+      "MRR@3": 0.4,
+      "F1@3": 0.2,
+      "Recall@5": 0.4,
+      "Precision@5": 0.08,
+      "Hit@5": 0.4,
+      "MRR@5": 0.4,
+      "F1@5": 0.13333333333333333,
+      "Micro_Recall": 0.4,
+      "Total_Queries": 5,
+      "Total_Relevant": 5,
+      "Total_Relevant_Retrieved": 2,
+      "Avg_Results_Per_Query": 5.0,
       "Eval_Mode": "score_threshold"
     },
     "无关文本": {
@@ -205,7 +481,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 3,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 4.333333333333333,
+      "Avg_Results_Per_Query": 4.666666666666667,
       "Eval_Mode": "score_threshold"
     },
     "时间-15天超时": {
@@ -228,7 +504,7 @@
       "Total_Queries": 2,
       "Total_Relevant": 2,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 6.5,
+      "Avg_Results_Per_Query": 6.0,
       "Eval_Mode": "score_threshold"
     },
     "时间-30天硬限制": {
@@ -251,7 +527,7 @@
       "Total_Queries": 2,
       "Total_Relevant": 0,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 3.5,
+      "Avg_Results_Per_Query": 3.0,
       "Eval_Mode": "score_threshold"
     },
     "时间-7天窗口临界": {
@@ -274,7 +550,7 @@
       "Total_Queries": 1,
       "Total_Relevant": 1,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 7.0,
+      "Avg_Results_Per_Query": 6.0,
       "Eval_Mode": "score_threshold"
     },
     "时间-7天窗口内": {
@@ -297,7 +573,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 4,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 7.666666666666667,
+      "Avg_Results_Per_Query": 7.0,
       "Eval_Mode": "score_threshold"
     },
     "时间-7天超时": {
@@ -366,7 +642,7 @@
       "Total_Queries": 2,
       "Total_Relevant": 2,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 5.0,
+      "Avg_Results_Per_Query": 5.5,
       "Eval_Mode": "score_threshold"
     },
     "时间-物流超时": {
@@ -435,7 +711,7 @@
       "Total_Queries": 1,
       "Total_Relevant": 3,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 6.0,
+      "Avg_Results_Per_Query": 5.0,
       "Eval_Mode": "score_threshold"
     },
     "混合-升级路径": {
@@ -481,7 +757,7 @@
       "Total_Queries": 2,
       "Total_Relevant": 4,
       "Total_Relevant_Retrieved": 1,
-      "Avg_Results_Per_Query": 6.5,
+      "Avg_Results_Per_Query": 6.0,
       "Eval_Mode": "score_threshold"
     },
     "电话场景": {
@@ -550,7 +826,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 3,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 7.666666666666667,
+      "Avg_Results_Per_Query": 6.666666666666667,
       "Eval_Mode": "score_threshold"
     },
     "精确-定制": {
@@ -573,7 +849,7 @@
       "Total_Queries": 1,
       "Total_Relevant": 1,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 8.0,
+      "Avg_Results_Per_Query": 9.0,
       "Eval_Mode": "score_threshold"
     },
     "精确-律师": {
@@ -619,7 +895,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 3,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 2.6666666666666665,
+      "Avg_Results_Per_Query": 2.3333333333333335,
       "Eval_Mode": "score_threshold"
     },
     "精确-生鲜": {
@@ -642,7 +918,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 5,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 4.666666666666667,
+      "Avg_Results_Per_Query": 3.3333333333333335,
       "Eval_Mode": "score_threshold"
     },
     "语义-假货": {
@@ -665,7 +941,7 @@
       "Total_Queries": 4,
       "Total_Relevant": 4,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 6.75,
+      "Avg_Results_Per_Query": 5.5,
       "Eval_Mode": "score_threshold"
     },
     "语义-受伤": {
@@ -734,7 +1010,7 @@
       "Total_Queries": 2,
       "Total_Relevant": 2,
       "Total_Relevant_Retrieved": 1,
-      "Avg_Results_Per_Query": 4.5,
+      "Avg_Results_Per_Query": 4.0,
       "Eval_Mode": "score_threshold"
     },
     "语义-曝光": {
@@ -826,7 +1102,7 @@
       "Total_Queries": 3,
       "Total_Relevant": 3,
       "Total_Relevant_Retrieved": 0,
-      "Avg_Results_Per_Query": 2.6666666666666665,
+      "Avg_Results_Per_Query": 2.0,
       "Eval_Mode": "score_threshold"
     },
     "边界-退款": {
@@ -956,7 +1232,20 @@
     "R270",
     "R271",
     "R272",
-    "R291"
+    "R291",
+    "R300",
+    "R301",
+    "R302",
+    "R303",
+    "R304",
+    "R305",
+    "R307",
+    "R308",
+    "R309",
+    "R310",
+    "R321",
+    "R322",
+    "R323"
   ],
   "per_case": [
     {
@@ -974,7 +1263,7 @@
       "expected": [
         "投诉"
       ],
-      "retrieved_count": 4,
+      "retrieved_count": 3,
       "relevant_retrieved": 0
     },
     {
@@ -1028,7 +1317,7 @@
       "expected": [
         "水果"
       ],
-      "retrieved_count": 5,
+      "retrieved_count": 2,
       "relevant_retrieved": 0
     },
     {
@@ -1048,7 +1337,7 @@
         "蛋糕",
         "熟食"
       ],
-      "retrieved_count": 3,
+      "retrieved_count": 2,
       "relevant_retrieved": 0
     },
     {
@@ -1057,7 +1346,7 @@
       "expected": [
         "内裤"
       ],
-      "retrieved_count": 8,
+      "retrieved_count": 7,
       "relevant_retrieved": 0
     },
     {
@@ -1066,7 +1355,7 @@
       "expected": [
         "文胸"
       ],
-      "retrieved_count": 8,
+      "retrieved_count": 7,
       "relevant_retrieved": 0
     },
     {
@@ -1075,7 +1364,7 @@
       "expected": [
         "袜子"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1084,7 +1373,7 @@
       "expected": [
         "定制"
       ],
-      "retrieved_count": 8,
+      "retrieved_count": 9,
       "relevant_retrieved": 0
     },
     {
@@ -1102,7 +1391,7 @@
       "expected": [
         "假货"
       ],
-      "retrieved_count": 11,
+      "retrieved_count": 7,
       "relevant_retrieved": 0
     },
     {
@@ -1111,7 +1400,7 @@
       "expected": [
         "假货"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1201,7 +1490,7 @@
       "expected": [
         "过敏"
       ],
-      "retrieved_count": 4,
+      "retrieved_count": 2,
       "relevant_retrieved": 0
     },
     {
@@ -1264,7 +1553,7 @@
       "expected": [
         "工商"
       ],
-      "retrieved_count": 5,
+      "retrieved_count": 4,
       "relevant_retrieved": 0
     },
     {
@@ -1320,7 +1609,7 @@
         "不想要了",
         "多拍"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 8,
       "relevant_retrieved": 1
     },
     {
@@ -1329,7 +1618,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 6,
+      "retrieved_count": 8,
       "relevant_retrieved": 0
     },
     {
@@ -1375,7 +1664,7 @@
       "expected": [
         "质量问题"
       ],
-      "retrieved_count": 2,
+      "retrieved_count": 3,
       "relevant_retrieved": 0
     },
     {
@@ -1384,7 +1673,7 @@
       "expected": [
         "质量问题"
       ],
-      "retrieved_count": 10,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1403,7 +1692,7 @@
         "与描述不符",
         "发错货"
       ],
-      "retrieved_count": 8,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1467,7 +1756,7 @@
       "expected": [
         "消协"
       ],
-      "retrieved_count": 4,
+      "retrieved_count": 3,
       "relevant_retrieved": 0
     },
     {
@@ -1494,7 +1783,7 @@
       "expected": [
         "文胸"
       ],
-      "retrieved_count": 1,
+      "retrieved_count": 2,
       "relevant_retrieved": 0
     },
     {
@@ -1514,7 +1803,7 @@
         "海鲜",
         "投诉"
       ],
-      "retrieved_count": 6,
+      "retrieved_count": 5,
       "relevant_retrieved": 0
     },
     {
@@ -1525,7 +1814,7 @@
         "12315",
         "假货"
       ],
-      "retrieved_count": 6,
+      "retrieved_count": 5,
       "relevant_retrieved": 0
     },
     {
@@ -1589,7 +1878,7 @@
       "id": "R220",
       "query": "我不是要投诉你们，只是想问问售后流程",
       "expected": [],
-      "retrieved_count": 3,
+      "retrieved_count": 2,
       "relevant_retrieved": 0
     },
     {
@@ -1632,7 +1921,7 @@
       "expected": [
         "投诉"
       ],
-      "retrieved_count": 4,
+      "retrieved_count": 3,
       "relevant_retrieved": 0
     },
     {
@@ -1641,7 +1930,7 @@
       "expected": [
         "质量问题"
       ],
-      "retrieved_count": 0,
+      "retrieved_count": 1,
       "relevant_retrieved": 0
     },
     {
@@ -1659,7 +1948,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 9,
+      "retrieved_count": 8,
       "relevant_retrieved": 0
     },
     {
@@ -1678,7 +1967,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1687,7 +1976,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1696,7 +1985,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 3,
+      "retrieved_count": 4,
       "relevant_retrieved": 0
     },
     {
@@ -1705,7 +1994,7 @@
       "expected": [
         "不想要了"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1714,7 +2003,7 @@
       "expected": [
         "质量问题"
       ],
-      "retrieved_count": 5,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1750,7 +2039,7 @@
       "expected": [
         "质量问题"
       ],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1768,7 +2057,7 @@
       "expected": [
         "物流损坏"
       ],
-      "retrieved_count": 4,
+      "retrieved_count": 5,
       "relevant_retrieved": 0
     },
     {
@@ -1793,7 +2082,7 @@
       "id": "R280",
       "query": "买了一个多月了，现在才发现有问题想退",
       "expected": [],
-      "retrieved_count": 7,
+      "retrieved_count": 6,
       "relevant_retrieved": 0
     },
     {
@@ -1820,6 +2109,150 @@
       ],
       "retrieved_count": 6,
       "relevant_retrieved": 0
+    },
+    {
+      "id": "R300",
+      "query": "我要去消协头诉",
+      "expected": [
+        "投诉"
+      ],
+      "retrieved_count": 3,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R301",
+      "query": "你们这是期诈行为",
+      "expected": [
+        "欺诈"
+      ],
+      "retrieved_count": 1,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R302",
+      "query": "你们卖的是仿品吧？高访的？",
+      "expected": [
+        "假货"
+      ],
+      "retrieved_count": 2,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R303",
+      "query": "这个文兄尺寸不对",
+      "expected": [
+        "文胸"
+      ],
+      "retrieved_count": 1,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R304",
+      "query": "买的内库不合适",
+      "expected": [
+        "内裤"
+      ],
+      "retrieved_count": 0,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R305",
+      "query": "用了之后脸上过泯了",
+      "expected": [
+        "过敏"
+      ],
+      "retrieved_count": 1,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R306",
+      "query": "快递把东西摔怀了",
+      "expected": [
+        "物流损坏"
+      ],
+      "retrieved_count": 4,
+      "relevant_retrieved": 1
+    },
+    {
+      "id": "R307",
+      "query": "收到的东西有质良问题",
+      "expected": [
+        "质量问题"
+      ],
+      "retrieved_count": 3,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R308",
+      "query": "这个是定制的刻字的，能退吗",
+      "expected": [
+        "定制"
+      ],
+      "retrieved_count": 8,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R309",
+      "query": "我已经咨询过律诗了",
+      "expected": [
+        "律师"
+      ],
+      "retrieved_count": 1,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R310",
+      "query": "不想要了，想退贷",
+      "expected": [
+        "不想要了"
+      ],
+      "retrieved_count": 2,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R320",
+      "query": "快递把东西摔怀了，盒子也破了",
+      "expected": [
+        "物流损坏"
+      ],
+      "retrieved_count": 4,
+      "relevant_retrieved": 1
+    },
+    {
+      "id": "R321",
+      "query": "收到的有质良问题，做工粗糙",
+      "expected": [
+        "质量问题"
+      ],
+      "retrieved_count": 7,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R322",
+      "query": "实物和网页描术不符",
+      "expected": [
+        "与描述不符"
+      ],
+      "retrieved_count": 4,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R323",
+      "query": "买回来不想要子，能退吗",
+      "expected": [
+        "不想要了"
+      ],
+      "retrieved_count": 5,
+      "relevant_retrieved": 0
+    },
+    {
+      "id": "R324",
+      "query": "快递物流损怀，收到就破了",
+      "expected": [
+        "物流损坏"
+      ],
+      "retrieved_count": 5,
+      "relevant_retrieved": 1
     }
   ]
 }

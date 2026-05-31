@@ -27,11 +27,11 @@ public class ExactMatchTools {
 
     public static final String TOOL_EXACT_MATCH_KEYWORDS = "exactMatchKeywords";
 
-    @Value("${rule.rag.fuzzy.max-edit-distance:2}")
-    private int maxEditDistance;
+    @Value("${rule.rag.fuzzy.max-relative-distance:0.35}")
+    private double maxRelativeDistance;
 
-    @Value("${rule.rag.fuzzy.max-word-length:4}")
-    private int maxWordLength;
+    @Value("${rule.rag.fuzzy.max-keyword-length:10}")
+    private int maxKeywordLength;
 
     private final ObjectMapper objectMapper = new ObjectMapper();
 
@@ -53,7 +53,7 @@ public class ExactMatchTools {
             for (JsonNode kw : root.get("escalationKeywords")) {
                 String word = kw.get("keyword").asText().toLowerCase();
                 exactIndex.put(word, kw);
-                if (word.length() <= maxWordLength) shortKeywords.add(word);
+                if (word.length() <= maxKeywordLength) shortKeywords.add(word);
                 indexSynonyms(kw, word);
             }
             // 索引 strictRejectRules.productKeywords
@@ -61,7 +61,16 @@ public class ExactMatchTools {
                 for (JsonNode kw : rule.get("productKeywords")) {
                     String word = kw.asText().toLowerCase();
                     exactIndex.put(word, rule);
-                    if (word.length() <= maxWordLength) shortKeywords.add(word);
+                    if (word.length() <= maxKeywordLength) shortKeywords.add(word);
+                    indexSynonyms(kw, word);
+                }
+            }
+            // 索引 autoApproveRules.allowedReasons（使长词拼写错误可被L3捕获）
+            for (JsonNode rule : root.get("autoApproveRules")) {
+                for (JsonNode kw : rule.get("allowedReasons")) {
+                    String word = kw.asText().toLowerCase();
+                    exactIndex.put(word, rule);
+                    if (word.length() <= maxKeywordLength) shortKeywords.add(word);
                     indexSynonyms(kw, word);
                 }
             }
@@ -110,21 +119,32 @@ public class ExactMatchTools {
             }
         }
 
-        // 第三层：编辑距离模糊匹配（仅短词）
+        // 第三层：编辑距离模糊匹配（仅 ≥4 字长词，拼写错误）
+        // 设计：≤3字词走同义词词典（第二层），模糊匹配合法词汇间互扰太大。
+        // ≥4字长词(如"物流损坏""质量问题"): 相对编辑距离≤35%视为拼写错误。
         for (String keyword : shortKeywords) {
+            if (keyword.length() < 4) continue;  // ≤3字词跳过，走第二层同义词
+
             boolean alreadyMatched = matches.stream()
                     .anyMatch(m -> m.get("keyword").equals(keyword));
             if (alreadyMatched) continue;
-            // 滑动窗口检查
+
             int kwLen = keyword.length();
-            int threshold = keyword.length() <= 2 ? 1 : maxEditDistance;
-            for (int i = 0; i <= lower.length() - Math.max(1, kwLen - 1); i++) {
-                int end = Math.min(i + kwLen + threshold, lower.length());
-                String substr = lower.substring(i, end);
-                if (levenshtein(keyword, substr) <= threshold) {
-                    JsonNode rule = exactIndex.get(keyword);
-                    matches.add(buildMatchResult(keyword, rule, "fuzzy", 0.7));
-                    break;
+            for (int i = 0; i <= lower.length() - Math.max(1, kwLen - 2); i++) {
+                int maxEnd = Math.min(lower.length(), i + kwLen + 2);
+                for (int end = Math.max(i + kwLen - 2, i + 1); end <= maxEnd; end++) {
+                    String substr = lower.substring(i, end);
+                    int subLen = substr.length();
+                    if (Math.abs(subLen - kwLen) > 1) continue;
+
+                    int dist = levenshtein(keyword, substr);
+                    double relativeDist = (double) dist / Math.max(kwLen, subLen);
+                    if (relativeDist <= maxRelativeDistance) {
+                        JsonNode rule = exactIndex.get(keyword);
+                        matches.add(buildMatchResult(keyword, rule, "fuzzy", 0.7));
+                        i = lower.length();
+                        break;
+                    }
                 }
             }
         }

@@ -135,7 +135,25 @@
     {"id":"R281","category":"时间-30天硬限制","text":"两个月前买的，穿了才发现不合适","expectedKeywords":[],"expectedRuleTypes":[],"expectedMinScore":0,"description":"两个月→超硬限制"},
 
     {"id":"R290","category":"时间-模糊表达","text":"前几天买的，现在想退，感觉不太适合我","expectedKeywords":["不想要了"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"前几天+不太适合→模糊时间+不想要"},
-    {"id":"R291","category":"时间-模糊表达","text":"买了一星期左右，发现做工不太好","expectedKeywords":["质量问题"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"一星期左右+做工不好→模糊时间+质量"}
+    {"id":"R291","category":"时间-模糊表达","text":"买了一星期左右，发现做工不太好","expectedKeywords":["质量问题"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"一星期左右+做工不好→模糊时间+质量"},
+
+    {"id":"R300","category":"拼写-投诉","text":"我要去消协头诉","expectedKeywords":["投诉"],"expectedRuleTypes":["escalation"],"expectedMinScore":0.7,"description":"头诉→投诉(编辑距离=1,相对=0.5)"},
+    {"id":"R301","category":"拼写-欺诈","text":"你们这是期诈行为","expectedKeywords":["欺诈"],"expectedRuleTypes":["escalation"],"expectedMinScore":0.35,"description":"期诈→欺诈(编辑距离=1,相对=0.5)"},
+    {"id":"R302","category":"拼写-假货","text":"你们卖的是仿品吧？高访的？","expectedKeywords":["假货"],"expectedRuleTypes":["escalation"],"expectedMinScore":0.35,"description":"高访→高仿→假货(编辑距离=1)"},
+    {"id":"R303","category":"拼写-文胸","text":"这个文兄尺寸不对","expectedKeywords":["文胸"],"expectedRuleTypes":["strict_reject"],"expectedMinScore":0.5,"description":"文兄→文胸(编辑距离=1,相对=0.5)"},
+    {"id":"R304","category":"拼写-内裤","text":"买的内库不合适","expectedKeywords":["内裤"],"expectedRuleTypes":["strict_reject"],"expectedMinScore":0.5,"description":"内库→内裤(编辑距离=1,相对=0.5)"},
+    {"id":"R305","category":"拼写-过敏","text":"用了之后脸上过泯了","expectedKeywords":["过敏"],"expectedRuleTypes":["escalation"],"expectedMinScore":0.35,"description":"过泯→过敏(编辑距离=1,相对=0.5)"},
+    {"id":"R306","category":"拼写-物流","text":"快递把东西摔怀了","expectedKeywords":["物流损坏"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"摔怀→摔坏→物流损坏(编辑距离=1)"},
+    {"id":"R307","category":"拼写-质量","text":"收到的东西有质良问题","expectedKeywords":["质量问题"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"质良→质量(编辑距离=1,相对=0.25)"},
+    {"id":"R308","category":"拼写-定金","text":"这个是定制的刻字的，能退吗","expectedKeywords":["定制"],"expectedRuleTypes":["strict_reject"],"expectedMinScore":0.5,"description":"正确拼写，第一层命中(对照组)"},
+    {"id":"R309","category":"拼写-律师","text":"我已经咨询过律诗了","expectedKeywords":["律师"],"expectedRuleTypes":["escalation"],"expectedMinScore":0.7,"description":"律诗→律师(编辑距离=1,相对=0.5)"},
+    {"id":"R310","category":"拼写-退货","text":"不想要了，想退贷","expectedKeywords":["不想要了"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"无拼写错误在关键词上，但整体意图正确"},
+
+    {"id":"R320","category":"拼写-长词","text":"快递把东西摔怀了，盒子也破了","expectedKeywords":["物流损坏"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"摔怀→损坏, L3相对编辑距离=0.25"},
+    {"id":"R321","category":"拼写-长词","text":"收到的有质良问题，做工粗糙","expectedKeywords":["质量问题"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"质良→质量, L3相对编辑距离=0.25"},
+    {"id":"R322","category":"拼写-长词","text":"实物和网页描术不符","expectedKeywords":["与描述不符"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"描术→描述, L3相对编辑距离=0.2"},
+    {"id":"R323","category":"拼写-长词","text":"买回来不想要子，能退吗","expectedKeywords":["不想要了"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"不想要子→不想要了, L3相对编辑距离=0.25"},
+    {"id":"R324","category":"拼写-长词","text":"快递物流损怀，收到就破了","expectedKeywords":["物流损坏"],"expectedRuleTypes":["auto_approve"],"expectedMinScore":0.35,"description":"物流损怀→物流损坏, L3相对编辑距离=0.25"}
   ],
   "metrics": {
     "primary": ["Recall@K", "Precision@K", "MRR", "Hit@K", "F1@K"],

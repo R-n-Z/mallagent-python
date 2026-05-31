@@ -15,13 +15,6 @@
       "source": "exact",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "法律威胁",
-      "priority": "CRITICAL"
     }
   ],
   "R003": [
@@ -83,27 +76,6 @@
       "source": "exact",
       "category": "生鲜易腐商品",
       "priority": ""
-    },
-    {
-      "keyword": "假货",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "严重质量问题",
-      "priority": "HIGH"
-    },
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "限时/抢购商品",
-      "priority": ""
     }
   ],
   "R031": [],
@@ -114,13 +86,6 @@
       "source": "exact",
       "category": "生鲜易腐商品",
       "priority": ""
-    },
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
     }
   ],
   "R040": [
@@ -130,13 +95,6 @@
       "source": "exact",
       "category": "个人卫生用品",
       "priority": ""
-    },
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
     }
   ],
   "R041": [
@@ -145,13 +103,6 @@
       "score": 1.0,
       "source": "exact",
       "category": "个人卫生用品",
-      "priority": ""
-    },
-    {
-      "keyword": "兑换码",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
       "priority": ""
     }
   ],
@@ -162,13 +113,6 @@
       "source": "exact",
       "category": "个人卫生用品",
       "priority": ""
-    },
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
     }
   ],
   "R050": [
@@ -184,6 +128,13 @@
       "score": 1.0,
       "source": "exact",
       "category": "定制类商品",
+      "priority": ""
+    },
+    {
+      "keyword": "质量问题",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
       "priority": ""
     }
   ],
@@ -203,45 +154,9 @@
       "source": "synonym",
       "category": "严重质量问题",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "化妆品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "护肤品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "保健品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "食品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
     }
   ],
-  "R062": [
-    {
-      "keyword": "样机",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "限时/抢购商品",
-      "priority": ""
-    }
-  ],
+  "R062": [],
   "R063": [
     {
       "keyword": "假货",
@@ -337,20 +252,6 @@
       "source": "synonym",
       "category": "人身安全",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "电子券",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
-      "priority": ""
-    },
-    {
-      "keyword": "电子书",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
-      "priority": ""
     }
   ],
   "R100": [
@@ -428,13 +329,6 @@
       "source": "exact",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "法律威胁",
-      "priority": "CRITICAL"
     }
   ],
   "R130": [
@@ -468,74 +362,60 @@
   "R141": [],
   "R142": [
     {
-      "keyword": "退款",
+      "keyword": "多拍",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    },
+    {
+      "keyword": "不需要了",
       "score": 0.7,
       "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
+      "category": "",
+      "priority": ""
     }
   ],
-  "R143": [],
-  "R144": [
+  "R143": [
     {
-      "keyword": "退款",
+      "keyword": "不想要了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    },
+    {
+      "keyword": "不需要了",
       "score": 0.7,
       "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R144": [
+    {
+      "keyword": "不喜欢",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
     }
   ],
   "R150": [],
   "R151": [],
   "R152": [],
-  "R153": [],
-  "R154": [
+  "R153": [
     {
-      "keyword": "化妆品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "护肤品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "保健品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
-      "priority": ""
-    },
-    {
-      "keyword": "食品",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "已使用的消耗品",
+      "keyword": "坏了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
       "priority": ""
     }
   ],
+  "R154": [],
   "R160": [],
-  "R161": [
-    {
-      "keyword": "激活码",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
-      "priority": ""
-    },
-    {
-      "keyword": "兑换码",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
-      "priority": ""
-    }
-  ],
+  "R161": [],
   "R162": [],
   "R163": [],
   "R164": [],
@@ -552,17 +432,10 @@
     },
     {
       "keyword": "投诉",
-      "score": 0.7,
-      "source": "fuzzy",
+      "score": 0.9,
+      "source": "synonym",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "法律威胁",
-      "priority": "CRITICAL"
     }
   ],
   "R181": [
@@ -584,6 +457,13 @@
     }
   ],
   "R183": [
+    {
+      "keyword": "尺寸不对",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    },
     {
       "keyword": "文胸",
       "score": 1.0,
@@ -622,13 +502,6 @@
       "source": "exact",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "法律威胁",
-      "priority": "CRITICAL"
     }
   ],
   "R192": [
@@ -665,13 +538,6 @@
       "score": 1.0,
       "source": "exact",
       "category": "定制类商品",
-      "priority": ""
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "限时/抢购商品",
       "priority": ""
     }
   ],
@@ -720,21 +586,14 @@
       "source": "exact",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "课程",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "数字化商品",
-      "priority": ""
     }
   ],
   "R221": [
     {
-      "keyword": "个性化",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "定制类商品",
+      "keyword": "质量问题",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
       "priority": ""
     }
   ],
@@ -772,16 +631,17 @@
       "source": "exact",
       "category": "官方投诉",
       "priority": "HIGH"
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "法律威胁",
-      "priority": "CRITICAL"
     }
   ],
-  "R241": [],
+  "R241": [
+    {
+      "keyword": "坏了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    }
+  ],
   "R242": [
     {
       "keyword": "退款",
@@ -793,99 +653,208 @@
   ],
   "R250": [
     {
-      "keyword": "假货",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "严重质量问题",
-      "priority": "HIGH"
+      "keyword": "不想要了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
     },
     {
-      "keyword": "退款",
+      "keyword": "不需要了",
       "score": 0.7,
       "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "限时/抢购商品",
+      "category": "",
       "priority": ""
     }
   ],
   "R251": [
     {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
+      "keyword": "不喜欢",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
     }
   ],
-  "R252": [
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    }
-  ],
-  "R253": [
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    }
-  ],
+  "R252": [],
+  "R253": [],
   "R254": [
     {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    }
-  ],
-  "R255": [
+      "keyword": "不想要了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    },
     {
-      "keyword": "退款",
+      "keyword": "不需要了",
       "score": 0.7,
       "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
+      "category": "",
+      "priority": ""
     }
   ],
-  "R260": [],
+  "R255": [],
+  "R260": [
+    {
+      "keyword": "质量问题",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    }
+  ],
   "R261": [],
   "R262": [],
   "R263": [],
-  "R264": [
+  "R264": [],
+  "R265": [],
+  "R270": [
     {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
+      "keyword": "坏了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
     }
   ],
-  "R265": [],
-  "R270": [],
   "R271": [],
   "R272": [],
-  "R280": [
-    {
-      "keyword": "退款",
-      "score": 0.7,
-      "source": "fuzzy",
-      "category": "金额敏感",
-      "priority": "LOW"
-    }
-  ],
+  "R280": [],
   "R281": [],
   "R290": [],
-  "R291": []
+  "R291": [],
+  "R300": [
+    {
+      "keyword": "消协",
+      "score": 1.0,
+      "source": "exact",
+      "category": "监管投诉",
+      "priority": "CRITICAL"
+    },
+    {
+      "keyword": "投诉",
+      "score": 0.9,
+      "source": "synonym",
+      "category": "官方投诉",
+      "priority": "HIGH"
+    }
+  ],
+  "R301": [
+    {
+      "keyword": "欺诈",
+      "score": 0.9,
+      "source": "synonym",
+      "category": "严重投诉",
+      "priority": "HIGH"
+    }
+  ],
+  "R302": [
+    {
+      "keyword": "假货",
+      "score": 0.9,
+      "source": "synonym",
+      "category": "严重质量问题",
+      "priority": "HIGH"
+    }
+  ],
+  "R303": [
+    {
+      "keyword": "尺寸不对",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R304": [],
+  "R305": [
+    {
+      "keyword": "过敏",
+      "score": 0.9,
+      "source": "synonym",
+      "category": "人身安全",
+      "priority": "HIGH"
+    }
+  ],
+  "R306": [],
+  "R307": [
+    {
+      "keyword": "质量问题",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R308": [
+    {
+      "keyword": "定制",
+      "score": 1.0,
+      "source": "exact",
+      "category": "定制类商品",
+      "priority": ""
+    },
+    {
+      "keyword": "刻字",
+      "score": 1.0,
+      "source": "exact",
+      "category": "定制类商品",
+      "priority": ""
+    }
+  ],
+  "R309": [
+    {
+      "keyword": "律师",
+      "score": 0.9,
+      "source": "synonym",
+      "category": "法律威胁",
+      "priority": "CRITICAL"
+    }
+  ],
+  "R310": [
+    {
+      "keyword": "不想要了",
+      "score": 1.0,
+      "source": "exact",
+      "category": "",
+      "priority": ""
+    },
+    {
+      "keyword": "不需要了",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R320": [],
+  "R321": [
+    {
+      "keyword": "质量问题",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R322": [],
+  "R323": [
+    {
+      "keyword": "不想要了",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
+      "priority": ""
+    }
+  ],
+  "R324": [
+    {
+      "keyword": "物流损坏",
+      "score": 0.7,
+      "source": "fuzzy",
+      "category": "",
+      "priority": ""
+    }
+  ]
 }

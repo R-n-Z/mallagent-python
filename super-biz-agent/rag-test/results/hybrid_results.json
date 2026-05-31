@@ -35,14 +35,6 @@
       "l2Distance": null
     },
     {
-      "keyword": "起诉",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "消协 消费者协会 消费者权益保护 我去消协举报 找消费者协会",
       "score": 0.18369188904762268,
       "source": "vector",
@@ -167,30 +159,6 @@
       "l2Distance": null
     },
     {
-      "keyword": "假货",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-006",
-      "l2Distance": null
-    },
-    {
       "keyword": "不需要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.17954499125480652,
       "source": "vector",
@@ -259,14 +227,6 @@
       "l2Distance": null
     },
     {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "蛋糕 吃的 食物 食品 刺身 三文鱼 牛排 冰鲜 保鲜 速冻 生食 变质 臭了 发霉 买的是吃的 这是食物不能退吗",
       "score": 0.17172510027885438,
       "source": "vector",
@@ -331,14 +291,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5585494041442871
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     }
   ],
   "R041": [
@@ -365,14 +317,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6741769313812256
-    },
-    {
-      "keyword": "兑换码",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
-      "l2Distance": null
     },
     {
       "keyword": "袜子 贴身衣物 内搭 bra bra 贴身 个人护理 电动牙刷头 买的内衣不合适 穿过的能退吗",
@@ -422,14 +366,6 @@
       "source": "exact",
       "ruleType": "",
       "ruleId": "SR-003",
-      "l2Distance": null
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
       "l2Distance": null
     },
     {
@@ -529,6 +465,14 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6521557569503784
+    },
+    {
+      "keyword": "质量问题",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
     }
   ],
   "R060": [
@@ -615,38 +559,6 @@
       "l2Distance": 0.6722490191459656
     },
     {
-      "keyword": "化妆品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "护肤品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "保健品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "食品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
       "keyword": "外观缺陷 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
       "score": 0.20995372831821443,
       "source": "vector",
@@ -727,14 +639,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6762772798538208
-    },
-    {
-      "keyword": "样机",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-006",
-      "l2Distance": null
     }
   ],
   "R063": [
@@ -890,22 +794,6 @@
       "source": "synonym",
       "ruleType": "",
       "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "电子券",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
-      "l2Distance": null
-    },
-    {
-      "keyword": "电子书",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
       "l2Distance": null
     },
     {
@@ -1065,14 +953,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6097216606140137
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     }
   ],
   "R130": [
@@ -1174,6 +1054,14 @@
       "l2Distance": 0.458336740732193
     },
     {
+      "keyword": "多拍",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
       "keyword": "不需要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.291893470287323,
       "source": "vector",
@@ -1198,11 +1086,11 @@
       "l2Distance": 0.6177963018417358
     },
     {
-      "keyword": "退款",
+      "keyword": "不需要了",
       "score": 0.21,
       "source": "fuzzy",
       "ruleType": "",
-      "ruleId": "",
+      "ruleId": "AA-001",
       "l2Distance": null
     },
     {
@@ -1224,6 +1112,14 @@
   ],
   "R143": [
     {
+      "keyword": "不想要了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
       "keyword": "不需要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.27451339066028596,
       "source": "vector",
@@ -1238,6 +1134,14 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6360856890678406
+    },
+    {
+      "keyword": "不需要了",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
     },
     {
       "keyword": "拍错了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
@@ -1298,6 +1202,14 @@
       "l2Distance": 0.5382575988769531
     },
     {
+      "keyword": "不喜欢",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
       "keyword": "拍错了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.24846394062042237,
       "source": "vector",
@@ -1312,14 +1224,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6410990953445435
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     },
     {
       "keyword": "买错了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
@@ -1383,6 +1287,14 @@
   "R151": [],
   "R152": [],
   "R153": [
+    {
+      "keyword": "坏了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    },
     {
       "keyword": "坏了 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
       "score": 0.18848145604133607,
@@ -1448,38 +1360,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6735745668411255
-    },
-    {
-      "keyword": "化妆品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "护肤品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "保健品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
-    },
-    {
-      "keyword": "食品",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-005",
-      "l2Distance": null
     }
   ],
   "R160": [
@@ -1564,22 +1444,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5215017795562744
-    },
-    {
-      "keyword": "激活码",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
-      "l2Distance": null
-    },
-    {
-      "keyword": "兑换码",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
-      "l2Distance": null
     }
   ],
   "R162": [
@@ -1804,16 +1668,8 @@
     },
     {
       "keyword": "投诉",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "起诉",
-      "score": 0.21,
-      "source": "fuzzy",
+      "score": 0.27,
+      "source": "synonym",
       "ruleType": "",
       "ruleId": "",
       "l2Distance": null
@@ -1848,6 +1704,14 @@
     }
   ],
   "R183": [
+    {
+      "keyword": "尺寸不对",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-003",
+      "l2Distance": null
+    },
     {
       "keyword": "文胸",
       "score": 0.3,
@@ -1941,14 +1805,6 @@
       "l2Distance": null
     },
     {
-      "keyword": "起诉",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "海鲜 吃的 食物 食品 刺身 三文鱼 牛排 冰鲜 保鲜 速冻 生食 变质 臭了 发霉 买的是吃的 这是食物不能退吗",
       "score": 0.17420914769172668,
       "source": "vector",
@@ -2004,14 +1860,6 @@
       "source": "exact",
       "ruleType": "",
       "ruleId": "SR-004",
-      "l2Distance": null
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-006",
       "l2Distance": null
     }
   ],
@@ -2138,17 +1986,17 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.639781653881073
-    },
-    {
-      "keyword": "课程",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-002",
-      "l2Distance": null
     }
   ],
   "R221": [
+    {
+      "keyword": "质量问题",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    },
     {
       "keyword": "颜色不对 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
       "score": 0.21842887997627258,
@@ -2164,14 +2012,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.669780969619751
-    },
-    {
-      "keyword": "个性化",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-004",
-      "l2Distance": null
     },
     {
       "keyword": "发错货 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
@@ -2286,14 +2126,6 @@
       "l2Distance": 0.5772507190704346
     },
     {
-      "keyword": "起诉",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "消协 消费者协会 消费者权益保护 我去消协举报 找消费者协会",
       "score": 0.17659021615982057,
       "source": "vector",
@@ -2302,7 +2134,16 @@
       "l2Distance": 0.7283227443695068
     }
   ],
-  "R241": [],
+  "R241": [
+    {
+      "keyword": "坏了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    }
+  ],
   "R242": [
     {
       "keyword": "退款 退钱 还钱 返还款项 退回款项 什么时候退钱 退款怎么还没到",
@@ -2322,6 +2163,14 @@
     }
   ],
   "R250": [
+    {
+      "keyword": "不想要了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
     {
       "keyword": "不需要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.29695706665515903,
@@ -2347,27 +2196,11 @@
       "l2Distance": 0.6250248551368713
     },
     {
-      "keyword": "假货",
+      "keyword": "不需要了",
       "score": 0.21,
       "source": "fuzzy",
       "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
-      "keyword": "尾货",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "SR-006",
+      "ruleId": "AA-001",
       "l2Distance": null
     },
     {
@@ -2421,6 +2254,14 @@
       "l2Distance": 0.535069465637207
     },
     {
+      "keyword": "不喜欢",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
       "keyword": "不喜欢 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.28510212898254395,
       "source": "vector",
@@ -2443,14 +2284,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5931163430213928
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     }
   ],
   "R252": [
@@ -2501,14 +2334,6 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5917387008666992
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     }
   ],
   "R253": [
@@ -2559,17 +2384,17 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5528205633163452
-    },
-    {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
     }
   ],
   "R254": [
+    {
+      "keyword": "不想要了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
     {
       "keyword": "不想要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.2432456433773041,
@@ -2587,11 +2412,11 @@
       "l2Distance": 0.6381482481956482
     },
     {
-      "keyword": "退款",
+      "keyword": "不需要了",
       "score": 0.21,
       "source": "fuzzy",
       "ruleType": "",
-      "ruleId": "",
+      "ruleId": "AA-001",
       "l2Distance": null
     }
   ],
@@ -2621,14 +2446,6 @@
       "l2Distance": 0.6547456979751587
     },
     {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "多拍 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.20717387795448303,
       "source": "vector",
@@ -2654,6 +2471,14 @@
     }
   ],
   "R260": [
+    {
+      "keyword": "质量问题",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    },
     {
       "keyword": "不能用了 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
       "score": 0.272383725643158,
@@ -2839,14 +2664,6 @@
       "l2Distance": 0.6448969841003418
     },
     {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "外观缺陷 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
       "score": 0.2075684756040573,
       "source": "vector",
@@ -2953,6 +2770,14 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.5035334229469299
+    },
+    {
+      "keyword": "坏了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
     }
   ],
   "R271": [
@@ -3081,14 +2906,6 @@
       "l2Distance": 0.6497930288314819
     },
     {
-      "keyword": "退款",
-      "score": 0.21,
-      "source": "fuzzy",
-      "ruleType": "",
-      "ruleId": "",
-      "l2Distance": null
-    },
-    {
       "keyword": "不喜欢 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
       "score": 0.198236483335495,
       "source": "vector",
@@ -3196,6 +3013,445 @@
       "ruleType": "",
       "ruleId": "",
       "l2Distance": 0.6353315114974976
+    }
+  ],
+  "R300": [
+    {
+      "keyword": "消协 消费者协会 消费者权益保护 我去消协举报 找消费者协会",
+      "score": 0.39776105582714083,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.38805991411209106
+    },
+    {
+      "keyword": "消协",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    },
+    {
+      "keyword": "投诉",
+      "score": 0.27,
+      "source": "synonym",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    }
+  ],
+  "R301": [
+    {
+      "keyword": "欺诈",
+      "score": 0.27,
+      "source": "synonym",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    }
+  ],
+  "R302": [
+    {
+      "keyword": "假货",
+      "score": 0.27,
+      "source": "synonym",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    },
+    {
+      "keyword": "假货 仿品 山寨 高仿 A货 冒牌 假的 不是正品 以次充好 伪劣 仿的 不像真的 不像正品 怀疑假的 这个看起来是假的 你们卖假货 和专柜的不一样 这是仿的吧 是不是仿的 看起来不像真的 怀疑是假货",
+      "score": 0.21895105838775636,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6631522178649902
+    }
+  ],
+  "R303": [
+    {
+      "keyword": "尺寸不对",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-003",
+      "l2Distance": null
+    }
+  ],
+  "R304": [],
+  "R305": [
+    {
+      "keyword": "过敏",
+      "score": 0.27,
+      "source": "synonym",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    }
+  ],
+  "R306": [
+    {
+      "keyword": "快递破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.3634059935808182,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.4409138560295105
+    },
+    {
+      "keyword": "物流损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.3626329153776169,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.44210320711135864
+    },
+    {
+      "keyword": "运输损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.35898524075746535,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.44771501421928406
+    },
+    {
+      "keyword": "包装破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.3374009817838669,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.48092156648635864
+    }
+  ],
+  "R307": [
+    {
+      "keyword": "质量问题",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    },
+    {
+      "keyword": "漏发 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
+      "score": 0.17254722714424134,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.734542727470398
+    },
+    {
+      "keyword": "质量问题 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.17241491973400117,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.7347462773323059
+    }
+  ],
+  "R308": [
+    {
+      "keyword": "定制",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "SR-004",
+      "l2Distance": null
+    },
+    {
+      "keyword": "刻字",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "SR-004",
+      "l2Distance": null
+    },
+    {
+      "keyword": "专属 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.23751512467861177,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6345921158790588
+    },
+    {
+      "keyword": "来图 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.22825767397880556,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6488343477249146
+    },
+    {
+      "keyword": "个性化 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.2063655436038971,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6825145483016968
+    },
+    {
+      "keyword": "定制款 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.20163068175315857,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6897989511489868
+    },
+    {
+      "keyword": "刻字 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.19815659523010254,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6951436996459961
+    },
+    {
+      "keyword": "DIY 定制化 私人订制 定做 刻名字 专属定制 个性定制 刻了名字的 按照我的要求做的",
+      "score": 0.19690829515457153,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6970641613006592
+    }
+  ],
+  "R309": [
+    {
+      "keyword": "律师",
+      "score": 0.27,
+      "source": "synonym",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": null
+    }
+  ],
+  "R310": [
+    {
+      "keyword": "不想要了",
+      "score": 0.3,
+      "source": "exact",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
+      "keyword": "不需要了",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    }
+  ],
+  "R320": [
+    {
+      "keyword": "物流损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.427897971868515,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.3416954278945923
+    },
+    {
+      "keyword": "运输损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.4258076310157776,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.3449113368988037
+    },
+    {
+      "keyword": "快递破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.4230477139353752,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.3491573631763458
+    },
+    {
+      "keyword": "包装破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.4058801785111427,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.3755689561367035
+    }
+  ],
+  "R321": [
+    {
+      "keyword": "质量问题 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.2893086910247803,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.5549097061157227
+    },
+    {
+      "keyword": "有瑕疵 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.2568417310714722,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6048588752746582
+    },
+    {
+      "keyword": "外观缺陷 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.2539157032966614,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6093604564666748
+    },
+    {
+      "keyword": "破损 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.24417811036109927,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6243413686752319
+    },
+    {
+      "keyword": "功能异常 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.24319078326225282,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.625860333442688
+    },
+    {
+      "keyword": "不能用了 质量不行 做工差 有毛病 坏的 次品 残次品 开线 掉色 脱落 做工太差 线头 质量太差了 做工粗糙 脱线 不亮 功能异常 按钮不灵 拉链坏了 穿了才发现 洗了就掉色 收到就是坏的 用了两天就坏了 屏幕有裂痕 按钮按不动 做工太差了线头到处是 收到发现是坏的",
+      "score": 0.24119082987308502,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6289371848106384
+    },
+    {
+      "keyword": "质量问题",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-002",
+      "l2Distance": null
+    }
+  ],
+  "R322": [
+    {
+      "keyword": "颜色不对 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
+      "score": 0.19799418449401857,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6953935623168945
+    },
+    {
+      "keyword": "尺寸不对 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
+      "score": 0.1929376006126404,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.7031729221343994
+    },
+    {
+      "keyword": "漏发 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
+      "score": 0.18492418825626375,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.7155012488365173
+    },
+    {
+      "keyword": "少件 图文不符 和图片不一样 色差大 尺寸偏差 发错了 少了配件 颜色不对 和图片差太多 颜色差别太大 收到的不一样 功能不符 写的蓝牙没有 图片上有的发过来没有 实物颜色和网上完全不一样 买的L码发的M码 少了一个充电器 颜色和网页图片差太多了 收到的东西和图片不一样",
+      "score": 0.1839912176132202,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.7169365882873535
+    }
+  ],
+  "R323": [
+    {
+      "keyword": "不想要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
+      "score": 0.24718038439750672,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6197224855422974
+    },
+    {
+      "keyword": "不需要了 无理由 7天无理由 七日无理由 不想要 买错 拍多 买多 下错单 不想要这个 想退 冲动消费 不太合适 不太适合 买回来发现用不上 买回来不喜欢 用不上 冲动消费了 和想象中不一样 用了一次不合适 打开试了一下不喜欢",
+      "score": 0.23645368218421936,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.6362251043319702
+    },
+    {
+      "keyword": "不想要了",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-001",
+      "l2Distance": null
+    },
+    {
+      "keyword": "内裤 贴身衣物 内搭 bra bra 贴身 个人护理 电动牙刷头 买的内衣不合适 穿过的能退吗",
+      "score": 0.18342936635017396,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.7178009748458862
+    },
+    {
+      "keyword": "耳塞 贴身衣物 内搭 bra bra 贴身 个人护理 电动牙刷头 买的内衣不合适 穿过的能退吗",
+      "score": 0.1778571903705597,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.726373553276062
+    }
+  ],
+  "R324": [
+    {
+      "keyword": "物流损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.37509203106164934,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.4229353368282318
+    },
+    {
+      "keyword": "运输损坏 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.36742916554212574,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.434724360704422
+    },
+    {
+      "keyword": "快递破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.3492889866232872,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.46263232827186584
+    },
+    {
+      "keyword": "包装破损 快递摔坏了 盒子烂了 运输中碰坏了 快递暴力 包装坏了 盒子破了 快递弄坏了 收到就破了 屏幕被快递摔裂了 摔变形了 破了一个洞 收到时包装已经烂了 快递把东西摔变形了 盒子完全烂了里面也坏了 包装都破了",
+      "score": 0.3395356059074402,
+      "source": "vector",
+      "ruleType": "",
+      "ruleId": "",
+      "l2Distance": 0.47763752937316895
+    },
+    {
+      "keyword": "物流损坏",
+      "score": 0.21,
+      "source": "fuzzy",
+      "ruleType": "",
+      "ruleId": "AA-004",
+      "l2Distance": null
     }
   ]
 }

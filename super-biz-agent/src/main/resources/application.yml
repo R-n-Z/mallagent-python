@@ -101,5 +101,5 @@ rule:
       keyword-weight: 0.30     # 精确路得分乘数（HTTP扫描优化: 0.65→0.30, 降低精确路绝对分）
       vector-weight: 0.65      # 向量路得分乘数（HTTP扫描优化: 1.31→0.65, 平衡双路贡献）
     fuzzy:
-      max-edit-distance: 2     # 编辑距离上限
-      max-word-length: 4       # 仅对 ≤4 字的词做模糊匹配
+      max-relative-distance: 0.35  # 相对编辑距离上限 (levenshtein/max(len1,len2) ≤35%)
+      max-keyword-length: 10       # 仅对 ≤10 字的词做模糊匹配
