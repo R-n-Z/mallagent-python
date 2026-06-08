@@ -1,0 +1,258 @@
+{
+  "version": "2.0",
+  "description": "退货审核规则知识库 v2.0 — 支持混合检索（精确+同义+模糊+向量语义）",
+
+  "autoApproveRules": [
+    {
+      "ruleId": "AA-001",
+      "condition": "七天无理由退货且在有效期内",
+      "receiptDaysMax": 7,
+      "allowedReasons": ["七天无理由", "不想要了", "买错了", "拍错了", "多拍", "不需要了", "不喜欢"],
+      "synonyms": ["无理由", "7天无理由", "七日无理由", "不想要", "买错", "拍多", "买多", "下错单", "不想要这个", "想退", "冲动消费", "不太合适", "不太适合", "买回来发现用不上"],
+      "examples": ["买回来不喜欢", "用不上", "冲动消费了", "和想象中不一样", "用了一次不合适", "打开试了一下不喜欢"],
+      "matchType": "semantic",
+      "requirements": ["商品未经使用保持原状", "配件赠品包装完整", "不属于严格拒绝类商品"]
+    },
+    {
+      "ruleId": "AA-002",
+      "condition": "商品质量问题且有凭证",
+      "receiptDaysMax": 15,
+      "allowedReasons": ["质量问题", "有瑕疵", "破损", "坏了", "不能用了", "功能异常", "外观缺陷"],
+      "synonyms": ["质量不行", "做工差", "有毛病", "坏的", "次品", "残次品", "开线", "掉色", "脱落", "做工太差", "线头", "质量太差了", "做工粗糙", "脱线", "不亮", "功能异常", "按钮不灵", "拉链坏了", "穿了才发现", "洗了就掉色"],
+      "examples": ["收到就是坏的", "用了两天就坏了", "屏幕有裂痕", "按钮按不动", "做工太差了线头到处是", "收到发现是坏的"],
+      "matchType": "semantic",
+      "requirements": ["提供清晰的商品问题照片或视频", "问题非人为损坏"]
+    },
+    {
+      "ruleId": "AA-003",
+      "condition": "商品与描述不符",
+      "receiptDaysMax": 15,
+      "allowedReasons": ["与描述不符", "颜色不对", "尺寸不对", "规格不对", "发错货", "少件", "漏发"],
+      "synonyms": ["图文不符", "和图片不一样", "色差大", "尺寸偏差", "发错了", "少了配件", "颜色不对", "和图片差太多", "颜色差别太大", "收到的不一样", "功能不符", "写的蓝牙没有", "图片上有的发过来没有"],
+      "examples": ["实物颜色和网上完全不一样", "买的L码发的M码", "少了一个充电器", "颜色和网页图片差太多了", "收到的东西和图片不一样"],
+      "matchType": "semantic",
+      "requirements": ["提供商品实物照片与页面描述对比", "型号规格颜色与订单记录不一致"]
+    },
+    {
+      "ruleId": "AA-004",
+      "condition": "物流损坏",
+      "receiptDaysMax": 3,
+      "allowedReasons": ["物流损坏", "快递破损", "包装破损", "运输损坏"],
+      "synonyms": ["快递摔坏了", "盒子烂了", "运输中碰坏了", "快递暴力", "包装坏了", "盒子破了", "快递弄坏了", "收到就破了", "屏幕被快递摔裂了", "摔变形了", "破了一个洞"],
+      "examples": ["收到时包装已经烂了", "快递把东西摔变形了", "盒子完全烂了里面也坏了", "包装都破了"],
+      "matchType": "semantic",
+      "requirements": ["提供开箱视频或快递面单+破损照片", "在签收后3天内反馈"]
+    }
+  ],
+
+  "escalationKeywords": [
+    {
+      "keyword": "投诉",
+      "matchType": "semantic",
+      "synonyms": ["举报", "告你们", "维权", "找客服投诉", "客服不管", "头诉"],
+      "examples": ["我要投诉你们", "不解决我就去举报", "这服务太差了我要投诉"],
+      "category": "官方投诉",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "用户明确提出投诉意图"
+    },
+    {
+      "keyword": "12315",
+      "matchType": "exact",
+      "synonyms": [],
+      "examples": ["打12315", "12315举报", "消费者热线"],
+      "category": "监管投诉",
+      "priority": "CRITICAL",
+      "action": "立即转人工客服主管",
+      "note": "用户引用消费者投诉热线"
+    },
+    {
+      "keyword": "消协",
+      "matchType": "exact",
+      "synonyms": ["消费者协会", "消费者权益保护"],
+      "examples": ["我去消协举报", "找消费者协会"],
+      "category": "监管投诉",
+      "priority": "CRITICAL",
+      "action": "立即转人工客服主管",
+      "note": "用户提到消费者协会"
+    },
+    {
+      "keyword": "律师",
+      "matchType": "exact",
+      "synonyms": ["法务", "法律顾问", "律师函", "律诗"],
+      "examples": ["我律师会联系你们", "等着收律师函吧"],
+      "category": "法律威胁",
+      "priority": "CRITICAL",
+      "action": "立即转人工客服主管+法务",
+      "note": "用户涉及法律层面"
+    },
+    {
+      "keyword": "起诉",
+      "matchType": "semantic",
+      "synonyms": ["告上法庭", "打官司", "法院见", "诉讼", "立案", "被告", "去法院", "告你们", "法庭上见", "收传票", "等着被告"],
+      "examples": ["我要去法院告你们", "等着被起诉吧", "等着被告吧", "我们法院见", "我要告你们"],
+      "category": "法律威胁",
+      "priority": "CRITICAL",
+      "action": "立即转人工客服主管+法务",
+      "note": "用户威胁法律诉讼"
+    },
+    {
+      "keyword": "假货",
+      "matchType": "semantic",
+      "synonyms": ["仿品", "山寨", "高仿", "A货", "冒牌", "假的", "不是正品", "以次充好", "伪劣", "仿的", "不像真的", "不像正品", "怀疑假的"],
+      "examples": ["这个看起来是假的", "你们卖假货", "和专柜的不一样", "这是仿的吧", "是不是仿的", "看起来不像真的", "怀疑是假货"],
+      "category": "严重质量问题",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "用户质疑商品真实性"
+    },
+    {
+      "keyword": "欺诈",
+      "matchType": "semantic",
+      "synonyms": ["骗人", "坑人", "诈骗", "虚假宣传", "误导", "上当", "期诈", "欺骗"],
+      "examples": ["你们这是骗人", "完全就是欺诈", "我被你们坑了"],
+      "category": "严重投诉",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "用户指控欺诈行为"
+    },
+    {
+      "keyword": "过敏",
+      "matchType": "semantic",
+      "synonyms": ["红肿", "起疹", "发痒", "刺痛", "灼伤", "反应", "不适", "起红点", "发红", "发烫", "又痒又痛", "起疹子", "脸上起", "过泯"],
+      "examples": ["用了之后脸上起红点了", "擦完皮肤发痒", "过敏了怎么办"],
+      "category": "人身安全",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "涉及人身伤害/健康问题"
+    },
+    {
+      "keyword": "受伤",
+      "matchType": "semantic",
+      "synonyms": ["划伤", "烫伤", "割到", "伤到手", "流血", "事故", "被划了一下", "差点烫到", "差点割到", "冒烟"],
+      "examples": ["使用的时候被划伤了", "这个东西有安全隐患"],
+      "category": "人身安全",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "涉及人身安全问题"
+    },
+    {
+      "keyword": "工商",
+      "matchType": "exact",
+      "synonyms": ["工商局", "市场监督管理局", "市场监管"],
+      "examples": ["我去工商局投诉", "找市场监督管理局"],
+      "category": "行政投诉",
+      "priority": "HIGH",
+      "action": "立即转人工客服",
+      "note": "用户提到工商部门"
+    },
+    {
+      "keyword": "媒体",
+      "matchType": "semantic",
+      "synonyms": ["记者", "新闻", "电视台", "报社", "自媒体"],
+      "examples": ["我认识记者朋友", "让媒体来报道一下"],
+      "category": "舆情风险",
+      "priority": "MEDIUM",
+      "action": "转人工客服",
+      "note": "用户可能联系媒体曝光"
+    },
+    {
+      "keyword": "曝光",
+      "matchType": "semantic",
+      "synonyms": ["发到网上", "发微博", "发抖音", "让大家看看", "录视频发", "挂你们", "让全网都知道", "发到微博上"],
+      "examples": ["我要把这件事发到网上", "让大家都知道你们怎么对待客户的"],
+      "category": "舆情风险",
+      "priority": "MEDIUM",
+      "action": "转人工客服",
+      "note": "用户威胁曝光"
+    },
+    {
+      "keyword": "退款",
+      "matchType": "semantic",
+      "synonyms": ["退钱", "还钱", "返还款项", "退回款项"],
+      "examples": ["什么时候退钱", "退款怎么还没到"],
+      "category": "金额敏感",
+      "priority": "LOW",
+      "action": "标记关注，正常审核流程",
+      "note": "金额超过500元时升级人工复核"
+    }
+  ],
+
+  "strictRejectRules": [
+    {
+      "ruleId": "SR-001",
+      "category": "生鲜易腐商品",
+      "productKeywords": ["生鲜", "水果", "蔬菜", "肉类", "海鲜", "水产", "冷冻", "冷藏", "鲜奶", "酸奶", "蛋糕", "熟食"],
+      "synonyms": ["吃的", "食物", "食品", "刺身", "三文鱼", "牛排", "冰鲜", "保鲜", "速冻", "生食", "变质", "臭了", "发霉"],
+      "examples": ["买的是吃的", "这是食物不能退吗"],
+      "matchType": "semantic",
+      "reason": "根据《消费者权益保护法》，鲜活易腐商品不适用七天无理由退货",
+      "exception": "收到时已损坏腐烂或变质，需提供开箱视频/照片作为凭证",
+      "autoReject": true
+    },
+    {
+      "ruleId": "SR-002",
+      "category": "数字化商品",
+      "productKeywords": ["激活码", "序列号", "充值卡", "点卡", "兑换码", "电子券", "虚拟商品", "会员", "课程", "电子书"],
+      "synonyms": ["key", "cdkey", "数字版", "在线课程", "网课", "充值码", "优惠券码"],
+      "examples": ["买了一个激活码", "是电子版的"],
+      "matchType": "semantic",
+      "reason": "数字化商品一经交付即视为消费完成，不支持退货",
+      "exception": "激活码/序列号未使用且可验证未激活状态",
+      "autoReject": true
+    },
+    {
+      "ruleId": "SR-003",
+      "category": "个人卫生用品",
+      "productKeywords": ["内衣", "内裤", "文胸", "袜子", "口罩", "耳塞", "牙刷", "剃须刀", "私密护理"],
+      "synonyms": ["贴身衣物", "内搭", "bra", "bra", "贴身", "个人护理", "电动牙刷头", "文兄"],
+      "examples": ["买的内衣不合适", "穿过的能退吗"],
+      "matchType": "semantic",
+      "reason": "个人卫生用品拆封后不予退货，保障消费者健康安全",
+      "exception": "商品未拆封包装完好，且不属于质量问题",
+      "autoReject": true
+    },
+    {
+      "ruleId": "SR-004",
+      "category": "定制类商品",
+      "productKeywords": ["定制", "订制", "刻字", "DIY", "个性化", "定制款", "来图", "专属"],
+      "synonyms": ["定制化", "私人订制", "定做", "刻名字", "专属定制", "个性定制"],
+      "examples": ["刻了名字的", "按照我的要求做的"],
+      "matchType": "semantic",
+      "reason": "定制类商品具有唯一性，无法二次销售，不支持退货",
+      "exception": "商品本身存在质量问题或与定制要求不符",
+      "autoReject": true
+    },
+    {
+      "ruleId": "SR-005",
+      "category": "已使用的消耗品",
+      "productKeywords": ["化妆品", "护肤品", "香水", "精油", "保健品", "食品", "茶叶", "咖啡", "耗材", "墨盒", "硒鼓", "胶卷"],
+      "synonyms": ["美妆", "护肤", "面霜", "口红", "粉底", "用过的", "拆开的", "开封"],
+      "examples": ["用了一次不合适", "打开试了一下"],
+      "matchType": "semantic",
+      "reason": "消耗品一经使用即影响二次销售，不支持退货",
+      "exception": "未拆封未使用，且签收后7天内",
+      "autoReject": false,
+      "condition": "需人工判断拆封状态"
+    },
+    {
+      "ruleId": "SR-006",
+      "category": "限时/抢购商品",
+      "productKeywords": ["秒杀", "限时", "闪购", "特价", "清仓", "尾货", "样机"],
+      "synonyms": ["抢购", "优惠抢", "秒拍", "限量", "特卖", "打折清"],
+      "examples": ["秒杀抢到的", "特价买的"],
+      "matchType": "semantic",
+      "reason": "明确标注不支持退货的限时促销商品不予退货",
+      "exception": "商品存在质量问题",
+      "autoReject": false,
+      "condition": "需检查商品详情页是否标注不支持七天无理由退货"
+    }
+  ],
+
+  "receiptDayThresholds": {
+    "unconditional": { "days": 7, "description": "七天无理由退货期，符合条件自动通过" },
+    "conditional": { "days": 15, "description": "7-15天仅接受质量问题/描述不符类退货" },
+    "strict": { "days": 30, "description": "15-30天需严格审查，仅重大质量问题可能通过" },
+    "reject": { "days": 999, "description": "超过30天一律拒绝（除非法律另有规定）" }
+  }
+}
